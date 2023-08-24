@@ -8,7 +8,7 @@ celery -A system beat -l INFO
 
 # Iniciar o Celery Worker
 
-celery -A system.celery worker -l info
+celery -A system.celery worker --loglevel=info -P solo
 
 # Iniciar o Redis
 
